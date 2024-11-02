@@ -1,0 +1,11 @@
+.navbar-item {
+  @apply cursor-pointer px-3 py-4 font-sans text-[15px] font-medium leading-[28px] text-[#F6FCDC] transition-colors hover:text-[#e5f69b];
+}
+
+.navbar-item.is--first {
+  @apply pl-6;
+}
+
+.navbar-item.is--last {
+  @apply pr-6;
+}

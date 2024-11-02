@@ -1,2 +1,19 @@
 @import url('./fonts/clash-grotesk.css');
 @import url('./tailwind.css');
+@import url('./reset.css');
+@import url('./navbar.css');
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  @apply font-sans;
+}
+
+button {
+  @apply border-0 border-none bg-transparent outline-none;
+}
