@@ -6,6 +6,13 @@ export default defineConfig({
   build: {
     outDir: '../build',
     emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: './src/index.html',
+        about: './src/pages/about.html',
+        contact: './src/pages/contact.html',
+      },
+    },
   },
   server: {
     open: true,
