@@ -1,0 +1,7 @@
+body {
+  @apply bg-[#161616];
+}
+
+svg.social-link-icon {
+  @apply text-[#A2FF00] transition-colors group-hover:text-[#8ad900];
+}
