@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import path from 'path';
+import handlebars from 'vite-plugin-handlebars';
 
 export default defineConfig({
   root: 'src',
@@ -9,8 +10,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './src/index.html',
-        about: './src/pages/about.html',
-        contact: './src/pages/contact.html',
+        about: './src/about.html',
+        contact: './src/contact.html',
       },
     },
   },
@@ -22,4 +23,13 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  plugins: [
+    handlebars({
+      context: {
+        title: 'My Handlebars Page',
+        description: 'This is a sample page using Handlebars with Vite!',
+      },
+      partialDirectory: path.resolve(__dirname, 'src/partials'), // Folder for Handlebars partials
+    }),
+  ],
 });
