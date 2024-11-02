@@ -4,10 +4,109 @@
     {{> head title="Home" }}
   </head>
   <body>
-    <div id="app">
-      <h1 class="font-serif text-red-500">Welcome to My Static Site</h1>
+    <div class="relative">
+      <img src="./assets/images/home-header.png" class="-z-10 h-auto max-w-full" />
+      <img
+        src="./assets/images/acedia-06.png"
+        width="159"
+        height="52"
+        alt="Acedia Logo"
+        class="absolute left-[29px] top-[27px]"
+      />
+
+      <div class="absolute left-1/2 top-[43.5px] -translate-x-1/2">{{> navbar }}</div>
+
+      <div class="absolute bottom-[55px] flex w-full items-end justify-between gap-20">
+        <div class="pl-[80px]">
+          <h1 class="font-serif text-[80px] uppercase text-white">The Grave Keeper</h1>
+          <p class="max-w-[1160px] font-serif text-[29px] leading-[36px] text-white">
+            A soulslike FPS. A Lovecraftian tale of an archaeologist’s bid for sanity and survival
+            in the cosmic nightmare he finds himself in.
+            <span class="font-bold">Coming early 2025.</span>
+          </p>
+        </div>
+        <div class="shrink-0 pr-[130px]">
+          <button
+            type="button"
+            class="flex items-center gap-4 rounded-full bg-[#A2FF00] px-8 py-2 font-serif text-lg font-medium leading-[36px] text-black transition-colors hover:bg-[#8ad900]"
+          >
+            Wishlist on Steam
+
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 25 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-black"
+            >
+              <path
+                d="M20.8107 12.5306L14.0607 19.2806C13.9199 19.4213 13.7291 19.5004 13.53 19.5004C13.331 19.5004 13.1401 19.4213 12.9994 19.2806C12.8587 19.1399 12.7796 18.949 12.7796 18.75C12.7796 18.551 12.8587 18.3601 12.9994 18.2194L18.4697 12.75H3.78003C3.58112 12.75 3.39035 12.671 3.2497 12.5303C3.10905 12.3897 3.03003 12.1989 3.03003 12C3.03003 11.8011 3.10905 11.6103 3.2497 11.4697C3.39035 11.329 3.58112 11.25 3.78003 11.25H18.4697L12.9994 5.78061C12.8587 5.63988 12.7796 5.44901 12.7796 5.24999C12.7796 5.05097 12.8587 4.8601 12.9994 4.71936C13.1401 4.57863 13.331 4.49957 13.53 4.49957C13.7291 4.49957 13.9199 4.57863 14.0607 4.71936L20.8107 11.4694C20.8804 11.539 20.9357 11.6217 20.9734 11.7128C21.0112 11.8038 21.0306 11.9014 21.0306 12C21.0306 12.0986 21.0112 12.1961 20.9734 12.2872C20.9357 12.3782 20.8804 12.461 20.8107 12.5306Z"
+                fill="currentcolor"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
+
+    <div class="w-full -translate-y-3 bg-[#02070A]">
+      <div class="flex w-full items-center justify-between gap-20 px-[70px] pt-[75px]">
+        <div class="max-w-[860px] shrink font-serif text-white">
+          <h2 class="mb-[11px] text-[55px] font-semibold uppercase leading-[60px]">
+            Your friendly neighborhood Game devs & creatives
+          </h2>
+
+          <p class="mb-9 max-w-[860px] text-[27px] leading-[36px]">
+            If your neighborhood happens to be Islamabad, Pakistan.
+          </p>
+
+          <button
+            type="button"
+            class="flex items-center gap-4 rounded-full bg-[#4813D8] px-8 py-2 font-serif text-lg font-medium leading-[36px] text-white transition-colors hover:bg-[#3d10b8]"
+          >
+            More about our game
+
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 25 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-white"
+            >
+              <path
+                d="M20.8107 12.5306L14.0607 19.2806C13.9199 19.4213 13.7291 19.5004 13.53 19.5004C13.331 19.5004 13.1401 19.4213 12.9994 19.2806C12.8587 19.1399 12.7796 18.949 12.7796 18.75C12.7796 18.551 12.8587 18.3601 12.9994 18.2194L18.4697 12.75H3.78003C3.58112 12.75 3.39035 12.671 3.2497 12.5303C3.10905 12.3897 3.03003 12.1989 3.03003 12C3.03003 11.8011 3.10905 11.6103 3.2497 11.4697C3.39035 11.329 3.58112 11.25 3.78003 11.25H18.4697L12.9994 5.78061C12.8587 5.63988 12.7796 5.44901 12.7796 5.24999C12.7796 5.05097 12.8587 4.8601 12.9994 4.71936C13.1401 4.57863 13.331 4.49957 13.53 4.49957C13.7291 4.49957 13.9199 4.57863 14.0607 4.71936L20.8107 11.4694C20.8804 11.539 20.9357 11.6217 20.9734 11.7128C21.0112 11.8038 21.0306 11.9014 21.0306 12C21.0306 12.0986 21.0112 12.1961 20.9734 12.2872C20.9357 12.3782 20.8804 12.461 20.8107 12.5306Z"
+                fill="currentcolor"
+              />
+            </svg>
+          </button>
+        </div>
+        <img src="./assets/images/pressA-1.png" class="h-auto max-w-[700px] shrink" />
+      </div>
+
+      <div class="relative overflow-hidden px-[70px] pt-[190px]">
+        <img
+          src="./assets/images/acedia guide (1)-14.png"
+          width="1189px"
+          height="1511px"
+          class="absolute -right-20 top-0 -z-10 translate-y-[-150px] rotate-[-17deg]"
+        />
+        <h2
+          class="font-serif text-[60px] font-semibold uppercase leading-[88px] text-[#A2FF00] underline underline-offset-8"
+        >
+          Our Work
+        </h2>
+        <img src="./assets/images/collage-1.png" class="h-auto w-full" />
+
+        <h2
+          class="pt-[100px] font-serif text-[60px] font-semibold uppercase leading-[88px] text-[#A2FF00] underline underline-offset-8"
+        >
+          Our Services
+        </h2>
+      </div>
+    </div>
+
     {{> scripts }}
-    <script type="module" src="index.ts"></script>
   </body>
 </html>
