@@ -19,3 +19,7 @@ body {
 button {
   @apply cursor-pointer border-0 border-none bg-transparent outline-none;
 }
+
+svg.social-link-icon {
+  @apply text-[#A2FF00] transition-colors group-hover:text-[#8ad900];
+}
