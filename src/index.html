@@ -5,7 +5,7 @@
   </head>
   <body class="bg-[#161616]">
     <div class="relative">
-      <img src="./assets/images/home-header.png" class="-z-10 h-auto max-w-full" />
+      <img src="./assets/images/home-header.png" class="h-auto max-w-full -z-10" />
       <img
         src="./assets/images/acedia-06.png"
         width="159"
@@ -93,27 +93,29 @@
           class="absolute -right-20 top-0 -z-10 translate-y-[-150px] rotate-[-17deg]"
         />
         <h2
+          id="our-work"
           class="font-serif text-[60px] font-semibold uppercase leading-[88px] text-[#A2FF00] underline underline-offset-8"
         >
           Our Work
         </h2>
-        <img src="./assets/images/collage-1.png" class="h-auto w-full" />
+        <img src="./assets/images/collage-1.png" class="w-full h-auto" />
       </div>
 
       <div class="relative overflow-hidden px-20 pt-[100px]">
         <img
           src="./assets/images/services-grid.png"
-          class="absolute bottom-0 left-0 -z-10 h-auto w-full"
+          class="absolute bottom-0 left-0 w-full h-auto -z-10"
         />
         <h2
+          id="our-services"
           class="mb-[46px] font-serif text-[60px] font-semibold uppercase leading-[88px] text-[#A2FF00] underline underline-offset-8"
         >
           Our Services
         </h2>
 
-        <div class="flex flex-nowrap items-end gap-16">
+        <div class="flex items-end gap-16 flex-nowrap">
           <div class="pb-[100px]">
-            <div class="mb-6 flex flex-wrap gap-16">
+            <div class="flex flex-wrap gap-16 mb-6">
               <div>
                 {{#> home/service-card title="Game Development" }} {{#*inline "content"}} Need a
                 tiny mobile game developed? We’re your people. Need a big, sprawling 18-hour PC
@@ -166,8 +168,8 @@
         </div>
       </div>
 
-      <div class="relative">
-        <img src="./assets/images/twitter-banner-1.png" class="h-auto w-full" />
+      <div class="relative" id="portfolio">
+        <img src="./assets/images/twitter-banner-1.png" class="w-full h-auto" />
         <div class="absolute left-0 top-0 flex h-full w-full items-center pl-[90px]">
           <div class="font-serif">
             <h2
@@ -204,7 +206,10 @@
         </div>
       </div>
 
-      <div class="relative -mt-2 flex w-full flex-col items-center gap-16 bg-[#161616] py-[80px]">
+      <div
+        id="blog"
+        class="relative -mt-2 flex w-full flex-col items-center gap-16 bg-[#161616] py-[80px]"
+      >
         <img src="./assets/images/in-progress-1.png" class="h-auto max-w-[200px]" />
         <h2
           class="max-w-[490px] text-center font-serif text-[60px] font-semibold leading-[63px] text-[#A2FF00] text-opacity-80"
