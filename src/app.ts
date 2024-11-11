@@ -1,17 +1,10 @@
-const menu = document.getElementById('menu')!;
-const page = document.getElementById('page')!;
+function toggleNavbar(navbar: 'desktop' | 'mobile'): void {
+  const mobileNavbar = document.querySelector('nav.is--mobile');
+  if (!mobileNavbar || !(mobileNavbar instanceof HTMLElement))
+    throw new Error('mobile navbar not found');
 
-function openMenu(): void {
-  menu.classList.remove('hidden');
-  menu.classList.add('fixed');
-  page.classList.add('h-screen');
+  mobileNavbar.dataset.open = navbar === 'mobile' ? 'true' : 'false';
+  document.body.dataset.navbar = navbar;
 }
 
-function closeMenu(): void {
-  menu.classList.add('hidden');
-  menu.classList.remove('fixed');
-  page.classList.remove('h-screen');
-}
-
-window.openMenu = openMenu;
-window.closeMenu = closeMenu;
+window.toggleNavbar = toggleNavbar;

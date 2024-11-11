@@ -1,20 +1,117 @@
-<ul class="flex items-center justify-center gap-0 rounded-full bg-[#F6FCDC] bg-opacity-20">
-  <li>
-    <a href="/" class="navbar-item is--first">Home</a>
-  </li>
-  <li>
-    <a href="/about" class="navbar-item">About Us</a>
-  </li>
-  <li>
-    <a href="/#our-work" class="navbar-item">Games</a>
-  </li>
-  <li>
-    <a href="/#our-services" class="navbar-item">Services</a>
-  </li>
-  <li>
-    <a href="/#portfolio" class="navbar-item">Portfolio</a>
-  </li>
-  <li>
-    <a href="/contact" class="navbar-item is--last">Get in Touch</a>
-  </li>
-</ul>
+<section
+  class="max-w-screen absolute left-0 top-0 z-10 flex h-full max-h-screen w-full justify-center"
+>
+  <div class="absolute left-0 top-0 flex h-[140px] w-full items-center justify-between">
+    <div class="order-1 lg:hidden">
+      <div class="px-8">
+        <button type="button" onclick="toggleNavbar('mobile')">
+          <img
+            id="menu-icon"
+            src="assets/images/menu-icon.svg"
+            alt="Hamburger Icon"
+            width="20px"
+            height="20px"
+          />
+        </button>
+      </div>
+    </div>
+    <div class="order-2">
+      <div class="px-8">
+        <a href="/">
+          <img src="./assets/images/acedia-06.png" width="159" height="52" alt="Acedia Logo" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Desktop Navbar -->
+  <nav class="is--desktop hidden py-10 lg:block">
+    <ul class="flex items-center justify-center gap-0 rounded-full bg-[#F6FCDC] bg-opacity-20">
+      <li>
+        <a href="/" class="navbar-item is--first">Home</a>
+      </li>
+      <li>
+        <a href="/about" class="navbar-item">About Us</a>
+      </li>
+      <li>
+        <a href="/#our-work" class="navbar-item">Games</a>
+      </li>
+      <li>
+        <a href="/#our-services" class="navbar-item">Services</a>
+      </li>
+      <li>
+        <a href="/#portfolio" class="navbar-item">Portfolio</a>
+      </li>
+      <li>
+        <a href="/contact" class="navbar-item is--last">Get in Touch</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Navbar -->
+  <nav
+    class="is--mobile sticky z-50 flex h-screen w-screen flex-col items-center justify-center overflow-auto bg-black"
+    data-open="false"
+  >
+    <button
+      type="button"
+      onclick="toggleNavbar('desktop')"
+      class="absolute left-0 top-0 px-10 py-14"
+    >
+      <img
+        id="menu-close"
+        src="../assets/images/menu-x.svg"
+        alt="X Icon"
+        width="22px"
+        height="22px"
+      />
+    </button>
+
+    <div class="flex w-full flex-col items-center gap-[35px]">
+      <a
+        href="/"
+        id="/"
+        class="font-serif text-[30px] leading-[29px] tracking-[0px] text-[#6C7361] no-underline"
+        >Home</a
+      >
+      <a
+        href="/about"
+        id="/about"
+        class="font-serif text-[30px] leading-[29px] tracking-[0px] text-[#6C7361] no-underline"
+        >About Us</a
+      >
+      <a
+        href="/#our-work"
+        id="/#our-work"
+        class="font-serif text-[30px] leading-[29px] tracking-[0px] text-[#6C7361] no-underline"
+        >Games</a
+      >
+      <a
+        href="/#our-services"
+        id="/#our-services"
+        class="font-serif text-[30px] leading-[29px] tracking-[0px] text-[#6C7361] no-underline"
+        >Services</a
+      >
+      <a
+        href="/#portfolio"
+        id="/#portfolio"
+        class="font-serif text-[30px] leading-[29px] tracking-[0px] text-[#6C7361] no-underline"
+        >Portfolio</a
+      >
+      <a
+        href="/contact"
+        id="/contact"
+        class="font-serif text-[30px] leading-[29px] tracking-[0px] text-[#6C7361] no-underline"
+        >Get in Touch</a
+      >
+    </div>
+
+    <div class="mx-auto mt-[102px] flex max-w-[372px] items-center justify-between">
+      <p class="w-[80px] text-center align-middle font-serif text-[12px] text-white">2024 Acedia</p>
+      <p class="w-[97px] text-center align-middle font-serif text-[12px] text-white">
+        Copyright Policy
+      </p>
+    </div>
+    <script type="module" src="../navbar.ts"></script>
+  </nav>
+</section>

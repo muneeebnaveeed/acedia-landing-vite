@@ -5,11 +5,13 @@
 
 html,
 body {
+  max-width: 100vw;
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 body {
@@ -22,4 +24,17 @@ button {
 
 svg.social-link-icon {
   @apply text-[#A2FF00] transition-colors group-hover:text-[#8ad900];
+}
+
+body[data-navbar='mobile'] {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+nav[data-open='true'] {
+  @apply flex;
+}
+
+nav[data-open='false'] {
+  @apply hidden;
 }
