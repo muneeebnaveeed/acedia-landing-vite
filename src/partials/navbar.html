@@ -28,22 +28,22 @@
   <nav class="is--desktop hidden py-10 lg:block">
     <ul class="flex items-center justify-center gap-0 rounded-full bg-[#F6FCDC] bg-opacity-20">
       <li>
-        <a href="/" class="navbar-item is--first">Home</a>
+        <a href="/" class="desktop-navbar-item is--first">Home</a>
       </li>
       <li>
-        <a href="/about" class="navbar-item">About Us</a>
+        <a href="/about" class="desktop-navbar-item">About Us</a>
       </li>
       <li>
-        <a href="/#our-work" class="navbar-item">Games</a>
+        <a href="/#our-work" class="desktop-navbar-item">Games</a>
       </li>
       <li>
-        <a href="/#our-services" class="navbar-item">Services</a>
+        <a href="/#our-services" class="desktop-navbar-item">Services</a>
       </li>
       <li>
-        <a href="/#portfolio" class="navbar-item">Portfolio</a>
+        <a href="/#portfolio" class="desktop-navbar-item">Portfolio</a>
       </li>
       <li>
-        <a href="/contact" class="navbar-item is--last">Get in Touch</a>
+        <a href="/contact" class="desktop-navbar-item is--last">Get in Touch</a>
       </li>
     </ul>
   </nav>
@@ -67,51 +67,33 @@
       />
     </button>
 
-    <div class="flex w-full flex-col items-center gap-[35px]">
-      <a
-        href="/"
-        id="/"
-        class="font-serif text-[30px] leading-[29px] tracking-[0px] text-[#6C7361] no-underline"
-        >Home</a
-      >
-      <a
-        href="/about"
-        id="/about"
-        class="font-serif text-[30px] leading-[29px] tracking-[0px] text-[#6C7361] no-underline"
-        >About Us</a
-      >
-      <a
-        href="/#our-work"
-        id="/#our-work"
-        class="font-serif text-[30px] leading-[29px] tracking-[0px] text-[#6C7361] no-underline"
-        >Games</a
-      >
-      <a
-        href="/#our-services"
-        id="/#our-services"
-        class="font-serif text-[30px] leading-[29px] tracking-[0px] text-[#6C7361] no-underline"
-        >Services</a
-      >
-      <a
-        href="/#portfolio"
-        id="/#portfolio"
-        class="font-serif text-[30px] leading-[29px] tracking-[0px] text-[#6C7361] no-underline"
-        >Portfolio</a
-      >
-      <a
-        href="/contact"
-        id="/contact"
-        class="font-serif text-[30px] leading-[29px] tracking-[0px] text-[#6C7361] no-underline"
-        >Get in Touch</a
-      >
-    </div>
+    <ul class="flex w-full flex-col items-center gap-[35px]">
+      <li>
+        <a href="/" class="mobile-navbar-item">Home</a>
+      </li>
+      <li>
+        <a href="/about" class="mobile-navbar-item">About Us</a>
+      </li>
+      <li>
+        <a href="/#our-work" class="mobile-navbar-item">Games</a>
+      </li>
+      <li>
+        <a href="/#our-services" class="mobile-navbar-item">Services</a>
+      </li>
+      <li>
+        <a href="/#portfolio" class="mobile-navbar-item">Portfolio</a>
+      </li>
+      <li>
+        <a href="/contact" class="mobile-navbar-item">Get in Touch</a>
+      </li>
+    </ul>
 
-    <div class="mx-auto mt-[102px] flex max-w-[372px] items-center justify-between">
-      <p class="w-[80px] text-center align-middle font-serif text-[12px] text-white">2024 Acedia</p>
-      <p class="w-[97px] text-center align-middle font-serif text-[12px] text-white">
-        Copyright Policy
-      </p>
+    <div
+      class="absolute bottom-0 left-1/2 flex w-full -translate-x-1/2 items-center justify-center gap-4 py-12 text-center font-serif text-xs text-white"
+    >
+      <!-- Gets updated by javascript -->
+      <p><span id="auto-date"></span> Acedia</p>
+      <p>Copyright Policy</p>
     </div>
-    <script type="module" src="../navbar.ts"></script>
   </nav>
 </section>
