@@ -2,7 +2,9 @@
   class="max-w-screen absolute left-0 top-0 z-10 flex h-full max-h-screen w-full justify-center"
 >
   <div class="absolute left-0 top-0 flex h-[140px] w-full items-center justify-between">
-    <div class="order-1 lg:hidden">
+    <div
+      class="absolute left-0 top-[70px] order-1 -translate-y-1/2 sm:static sm:block sm:translate-y-0 lg:hidden"
+    >
       <div class="px-8">
         <button type="button" onclick="toggleNavbar('mobile')">
           <img
@@ -15,7 +17,7 @@
         </button>
       </div>
     </div>
-    <div class="order-2">
+    <div class="order-2 flex w-full justify-center sm:block sm:w-auto">
       <div class="px-8">
         <a href="/">
           <img src="./assets/images/acedia-06.png" width="159" height="52" alt="Acedia Logo" />
